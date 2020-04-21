@@ -1,0 +1,16 @@
+{
+  "name": "webscaping",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "bunny",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "puppeteer": "^3.0.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5"
+  }
+}
