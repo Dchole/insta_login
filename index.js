@@ -3,7 +3,10 @@ const puppeteer = require("puppeteer")
 
 ;(async () => {
   try {
-    const browser = await puppeteer.launch()
+    const browser = await puppeteer.launch(/* {
+      headless: false,
+      defaultViewport: null
+    } */)
     const page = await browser.newPage()
 
     console.log("Loading...⌚")
@@ -17,14 +20,14 @@ const puppeteer = require("puppeteer")
     await page.type("input[name=password]", process.env.IGPASS)
 
     await Promise.all([
-      page.waitForNavigation(), // The promise resolves after navigation has finished
-      page.click("button[type=submit]") // Clicking the link will indirectly cause a navigation
+      page.waitForNavigation(),
+      page.click("button[type=submit]")
     ])
 
     console.log("✅")
-    await page.screenshot({ path: `homepage${Date.now()}.png` })
+    await page.screenshot({ path: `homepage.png` })
 
-    await browser.close()
+    await browser.close() // Comment this line when you uncomment the puppeteer.launch options
   } catch (err) {
     console.log(err)
   }
