@@ -4,13 +4,12 @@
   "main": "index.js",
   "author": "bunny",
   "license": "MIT",
+  "description": "A simple scraping script that logs into your instagram account and take screenshot",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
-    "puppeteer": "^3.0.0",
-    "request": "^2.88.2",
-    "request-promise": "^4.2.5"
+    "puppeteer": "^3.0.0"
   }
 }

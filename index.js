@@ -3,8 +3,8 @@ const puppeteer = require("puppeteer")
 
 ;(async () => {
   try {
-    const browser = await puppeteer.launch(/* {
-      headless: false,
+    const browser = await puppeteer.launch(/* {       // Uncomment if you want puppeteer to open chrome
+      headless: false,              
       defaultViewport: null
     } */)
     const page = await browser.newPage()
