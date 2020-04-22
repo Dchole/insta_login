@@ -32,8 +32,8 @@ Comment `browser.close()` to keep the browser open
 
 ## Requirements
 
-1 - Install git
-2 - Have node install
+1 - Install git <br>
+2 - Have node install <br>
 3 - Install yarn (Optional)
 
 If you don't have `yarn` then delete `yarn.lock` file before running `npm i`
