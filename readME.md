@@ -11,8 +11,10 @@ if you are using npm run `npm i` or `npm install`
 ## Set environment variables
 
 Create a [.env] file in the project root directory (i.e where index.js is located) and set<br>
+<br>
 IGUSERNAME=`<your_instagram_username>`<br>
 IGPASS=`<your_instagram_password>`<br>
+<br>
 Make sure you save the .env file
 
 ## Run the program
