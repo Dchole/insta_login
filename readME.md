@@ -29,3 +29,11 @@ If it didn't work it's probably because your username or password is incorrect s
 
 If you want to see the script working in preview mode (i.e open a browser) you can disabled the comments in `puppeteer.launch()`.
 Comment `browser.close()` to keep the browser open
+
+## Requirements
+
+1 - Install git
+2 - Have node install
+3 - Install yarn (Optional)
+
+If you don't have `yarn` then delete `yarn.lock` file before running `npm i`
